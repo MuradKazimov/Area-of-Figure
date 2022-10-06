@@ -43,7 +43,7 @@ namespace Areaoffigure
             double b = double.Parse(textBox2.Text);
             label4.Text = $"Area: {(float)(int)(a * b) * 100 / 100}   Perimeter: {2*(a+b)}"; }
             catch {
-        Messagebox.Show("Enter an input in valid form")
+        Messagebox.Show("Enter an input in valid form");
         }
         }
 
