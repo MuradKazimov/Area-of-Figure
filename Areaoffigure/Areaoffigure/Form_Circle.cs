@@ -24,10 +24,16 @@ namespace Areaoffigure
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try{
             double radius = double.Parse(textBox1.Text);
             double area = (double)((int)(Math.Pow(radius, 2) * Math.PI) * 100) /100;
             double perimeter = (double)((int)(Math.PI * 2 * radius ) * 100) / 100;
             label3.Text = $"Area is: {area}  Perimeter is: {perimeter}";
+        }
+        
+        catch {
+        Messagebox.Show("Enter an input in valid form")
+        }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
