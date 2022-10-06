@@ -39,9 +39,12 @@ namespace Areaoffigure
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
+            try { double a = double.Parse(textBox1.Text);
             double b = double.Parse(textBox2.Text);
-            label4.Text = $"Area: {(float)(int)(a * b) * 100 / 100}   Perimeter: {2*(a+b)}";
+            label4.Text = $"Area: {(float)(int)(a * b) * 100 / 100}   Perimeter: {2*(a+b)}"; }
+            catch {
+        Messagebox.Show("Enter an input in valid form")
+        }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
