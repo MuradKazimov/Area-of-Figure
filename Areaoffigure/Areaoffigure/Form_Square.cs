@@ -29,9 +29,13 @@ namespace Areaoffigure
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double side = double.Parse(textBox1.Text);
-            label3.Text = $"Area is: {(double)((int)(Math.Pow(side, 2) * 100)) / 100}  Perimeter is: {side*4}";
+           try{ double side = double.Parse(textBox1.Text);
+            label3.Text = $"Area is: {(double)((int)(Math.Pow(side, 2) * 100)) / 100}  Perimeter is: {side*4}"; }
+            catch {
+        Messagebox.Show("Enter an input in valid form")
         }
+        }
+        
 
         private void Form_Square_Load(object sender, EventArgs e)
         {
