@@ -32,7 +32,7 @@ namespace Areaoffigure
            try{ double side = double.Parse(textBox1.Text);
             label3.Text = $"Area is: {(double)((int)(Math.Pow(side, 2) * 100)) / 100}  Perimeter is: {side*4}"; }
             catch {
-        Messagebox.Show("Enter an input in valid form")
+        Messagebox.Show("Enter an input in valid form");
         }
         }
         
