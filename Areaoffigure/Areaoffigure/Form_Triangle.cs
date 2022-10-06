@@ -50,7 +50,7 @@ namespace Areaoffigure
             label5.Text = $"Area: {area}  Perimeter: {p*2}"; }
             
             catch {
-        Messagebox.Show("Enter an input in valid form")
+        Messagebox.Show("Enter an input in valid form");
         }
 
         }
