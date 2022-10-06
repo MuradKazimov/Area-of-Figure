@@ -32,7 +32,7 @@ namespace Areaoffigure
         }
         
         catch {
-        Messagebox.Show("Enter an input in valid form")
+        Messagebox.Show("Enter an input in valid form");
         }
         }
 
