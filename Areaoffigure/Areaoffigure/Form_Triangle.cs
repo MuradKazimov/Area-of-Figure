@@ -38,6 +38,12 @@ namespace Areaoffigure
             double b = double.Parse(textBox2.Text);
             double c = double.Parse(textBox3.Text);
 
+            if (a + b < c || a + c < b || b + c < a)
+            {
+                MessageBox.Show("Triangle with such sides doesn't exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             double p = (a + b + c) / 2;
             double area = (double)(int)(Math.Sqrt(p * (p - a) * (p - b) * (p-c))) * 100 / 100;
 
